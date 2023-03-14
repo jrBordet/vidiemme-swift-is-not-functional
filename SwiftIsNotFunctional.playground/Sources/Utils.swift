@@ -40,21 +40,21 @@ public func <^><A, B>(
 
 infix operator <*>: Apply
 
-func <*><A, B>(
+public func <*><A, B>(
     _ f: Maybe<(A) -> B>,
     _ a: Maybe<A>
 ) -> Maybe<B> {
     a.apply(f)
 }
 
-func <*><A, B>(
+public func <*><A, B>(
     _ f: [(A) -> B],
     _ a: [A]
 ) -> [B] {
     a.apply(f)
 }
 
-func <^><A, B>(
+public func <^><A, B>(
     _ f: [(A) -> B],
     _ a: [A]
 ) -> [B] {
@@ -121,7 +121,13 @@ public func pipe<A, B, C>(
     }
 }
 
-public func incr(_ i: Int) -> Int { i + 1 }
+public func incr(_ i: Int) -> Int {
+    i + 1
+}
+
+public func sqr(_ i: Int) -> Int {
+    i * i
+}
 
 public enum Maybe<A> {
     case none
@@ -236,8 +242,14 @@ public func curry<A, B, C>(
 
 public func unwrap<A>(_ result: Maybe<A>) -> A {
     guard case let .value(v) = result else {
-        fatalError()
+        fatalError("unwrap \(result)")
     }
     
     return v
+}
+
+public func assertMayBe<A: Equatable>(_ lhs: Maybe<A>, _ rhs: Maybe<A>) {
+    let r = try! unwrap(lhs, rhs: rhs)
+    
+    assert(r.0 == r.1)
 }
