@@ -24,3 +24,11 @@ if let a = a1, let b = b1 {
 let resultArray =  [ { $0 + 3 }, { $0 * 2 } ] <*> [1, 2, 3]
         
 resultArray == [4, 5, 6, 2, 4, 6]
+
+//: Optional as Applicative
+
+let three: Int? = 3
+
+let transform = pipe({ $0 + 2 }, { $0 + 1 })
+
+let resultThree = transform <^> three // a.map(transform)
