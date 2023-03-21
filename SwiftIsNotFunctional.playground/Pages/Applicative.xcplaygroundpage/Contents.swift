@@ -20,7 +20,7 @@ if let a = a1, let b = b1 {
     let result = addition(a, rhs: b) // 42
 }
 
-// Array as Applicative
+//: Array as Applicative
 let resultArray =  [ { $0 + 3 }, { $0 * 2 } ] <*> [1, 2, 3]
         
 resultArray == [4, 5, 6, 2, 4, 6]

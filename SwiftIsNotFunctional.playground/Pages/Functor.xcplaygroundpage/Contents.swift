@@ -2,7 +2,7 @@ import Foundation
 
 //: [Next](@next)
 
-// Identity law
+//: Identity law
 
 let maybe = Maybe<Int>(1)
 
@@ -18,7 +18,7 @@ let square: (Int) -> Int = {
     $0 * $0
 }
 
-// composition
+//: composition
 
 let incr_square = pipe(incr, square)
 
