@@ -4,12 +4,13 @@ import Foundation
 
 //: [Next](@next)
 
+
+//: Mising consistency
+
 var y = 1
 
 incr(y)
 
 sqr(y)
 
-
-let array: [Int?] = Array(0...100)
-
+y += 1
