@@ -10,7 +10,7 @@ let maybe = Maybe<Int>(1)
 
 let result = maybe.map { id($0) }
 
-assert(unwrap(result) == unwrap(maybe))
+assert(result<! == maybe<!)
 
 let incr: (Int) -> Int = {
     $0 + 1
@@ -31,8 +31,8 @@ let result_chaining: Maybe<Int> = maybe
     .map(incr)
     .map(square)
 
-unwrap(result_composition)
-unwrap(result_chaining)
+result_composition<!
+result_chaining<!
 
 let fancy: (Int) -> String = {
     "fancy \($0)"

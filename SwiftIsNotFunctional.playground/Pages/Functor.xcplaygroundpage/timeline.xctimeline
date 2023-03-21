@@ -3,7 +3,11 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/jean.bordet/Development/Vidiemme/Article/SwiftIsNotFunctional/vidiemme-swift-is-not-functional/SwiftIsNotFunctional.playground/Pages/Functor.xcplaygroundpage#CharacterRangeLen=49&amp;CharacterRangeLoc=568&amp;EndingColumnNumber=0&amp;EndingLineNumber=41&amp;StartingColumnNumber=1&amp;StartingLineNumber=40&amp;Timestamp=700492421.791528"
+         documentLocation = "file:///Users/jean.bordet/Development/Vidiemme/Article/SwiftIsNotFunctional/vidiemme-swift-is-not-functional/SwiftIsNotFunctional.playground/Pages/Functor.xcplaygroundpage#CharacterRangeLen=49&amp;CharacterRangeLoc=544&amp;EndingColumnNumber=0&amp;EndingLineNumber=41&amp;StartingColumnNumber=1&amp;StartingLineNumber=40&amp;Timestamp=700559666.448725"
+         selectedRepresentationIndex = "0">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/jean.bordet/Development/Vidiemme/Article/SwiftIsNotFunctional/vidiemme-swift-is-not-functional/SwiftIsNotFunctional.playground/Pages/Functor.xcplaygroundpage#CharacterRangeLen=20&amp;CharacterRangeLoc=451&amp;EndingColumnNumber=20&amp;EndingLineNumber=33&amp;StartingColumnNumber=0&amp;StartingLineNumber=33&amp;Timestamp=700559666.4488"
          selectedRepresentationIndex = "0">
       </LoggerValueHistoryTimelineItem>
    </TimelineItems>

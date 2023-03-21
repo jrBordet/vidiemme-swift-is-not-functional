@@ -240,6 +240,15 @@ public func curry<A, B, C>(
     }
 }
 
+postfix operator <!
+public postfix func <!<A>(result: Maybe<A>) -> A {
+    guard case let .value(v) = result else {
+        fatalError("unwrap \(result)")
+    }
+    
+    return v
+}
+
 public func unwrap<A>(_ result: Maybe<A>) -> A {
     guard case let .value(v) = result else {
         fatalError("unwrap \(result)")
