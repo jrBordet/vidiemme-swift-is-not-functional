@@ -1,6 +1,6 @@
-//: [Previous](@previous)
-
 import Foundation
+
+//: [Previous](@previous)
 
 //: [Next](@next)
 
